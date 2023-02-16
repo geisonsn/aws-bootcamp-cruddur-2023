@@ -1,0 +1,24 @@
+{
+    "BudgetLimit": {
+        "Amount": "10",
+        "Unit": "USD"
+    },
+    "BudgetName": "10USDMonthlyCreditsSpendBudget",
+    "BudgetType": "COST",
+    "CostTypes": {
+        "IncludeCredit": true,
+        "IncludeDiscount": false,
+        "IncludeOtherSubscription": false,
+        "IncludeRecurring": false,
+        "IncludeRefund": false,
+        "IncludeSubscription": false,
+        "IncludeSupport": false,
+        "IncludeTax": false,
+        "IncludeUpfront": false,
+        "UseBlended": false
+    },
+    "TimePeriod": {
+        "Start": "02/01/2023 00:00 UTC"
+    },
+    "TimeUnit": "MONTHLY"
+}

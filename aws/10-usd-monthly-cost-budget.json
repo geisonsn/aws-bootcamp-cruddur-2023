@@ -1,0 +1,24 @@
+{
+    "BudgetLimit": {
+        "Amount": "10",
+        "Unit": "USD"
+    },
+    "BudgetName": "10USDMonthlyCostBudget",
+    "BudgetType": "COST",
+    "CostTypes": {
+        "IncludeCredit": false,
+        "IncludeDiscount": true,
+        "IncludeOtherSubscription": true,
+        "IncludeRecurring": true,
+        "IncludeRefund": true,
+        "IncludeSubscription": true,
+        "IncludeSupport": true,
+        "IncludeTax": true,
+        "IncludeUpfront": true,
+        "UseBlended": false
+    },
+    "TimePeriod": {
+        "Start": "02/01/2023 00:00 UTC"
+    },
+    "TimeUnit": "MONTHLY"
+}
