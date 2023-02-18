@@ -117,3 +117,11 @@ aws budgets create-budget \
 
 **References**
 - https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html
+
+
+### Recreate Conceptual Diagram
+![Cruddur Conceptual Design](assets/Cruddur Project - Conceptual diagram.png
+
+### Recreate Logical Architectural Diagram
+![Cruddur Archictectural Design](assets/Cruddur Project - Architecture diagram.png)
+
