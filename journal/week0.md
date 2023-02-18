@@ -120,8 +120,10 @@ aws budgets create-budget \
 
 
 ### Recreate Conceptual Diagram
-![Cruddur Conceptual Design](assets/Cruddur Project - Conceptual diagram.png)
+![Cruddur Project - Conceptual diagram](https://user-images.githubusercontent.com/7865530/219850892-870bbf80-7442-472b-a3ee-2fb806355361.png)
+
 
 ### Recreate Logical Architectural Diagram
-![Cruddur Archictectural Design]([assets/Cruddur Project - Architecture diagram.png](https://raw.githubusercontent.com/geisonsn/aws-bootcamp-cruddur-2023/main/journal/assets/Cruddur%20Project%20-%20Architecture%20diagram.png))
+![Cruddur Project - Architecture diagram](https://user-images.githubusercontent.com/7865530/219850883-6eb1d9b8-c5a3-4379-b377-19371fc33638.png)
+
 
