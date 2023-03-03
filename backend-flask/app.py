@@ -14,7 +14,18 @@ from services.messages import *
 from services.create_message import *
 from services.show_activity import *
 
+# X-Ray
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+
+xray_url = os.getenv("AWS_XRAY_URL")
+xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+
 app = Flask(__name__)
+
+# X-Ray
+XRayMiddleware(app, xray_recorder)
+
 frontend = os.getenv('FRONTEND_URL')
 backend = os.getenv('BACKEND_URL')
 origins = [frontend, backend]
@@ -62,11 +73,13 @@ def data_create_message():
   return
 
 @app.route("/api/activities/home", methods=['GET'])
+@xray_recorder.capture('/api/activities/home')
 def data_home():
   data = HomeActivities.run()
   return data, 200
 
 @app.route("/api/activities/notifications", methods=['GET'])
+@xray_recorder.capture('/api/activities/notifications')
 def data_notifications():
   data = NotificationsActivities.run()
   return data, 200  
